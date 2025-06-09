@@ -135,6 +135,13 @@ int main() {
     printf("\n Comparação das Cartas (Atributo: População) \n");
     printf("Carta 1 - %s: %lu habitantes\n", cidade, populacao);
     printf("Carta 2 - %s: %lu habitantes\n", cidade2, populacao2);
+
+    if (populacao > populacao2) {
+        printf("Resultado: Carta 1 (%s) venceu!\n", cidade);
+    } else {
+        printf("Resultado: Carta 2 (%s) venceu!\n", cidade);
+    }
+
     
     return 0;
 

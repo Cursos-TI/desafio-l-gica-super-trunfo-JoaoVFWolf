@@ -131,6 +131,11 @@ int main() {
     printf("PIB per Capita: Carta %d venceu (%d)\n", 1 + (pibpercapita1 < pibpercapita2), (pibpercapita1 > pibpercapita2) * 1);
     printf("Super Poder: Carta %d venceu (%d)\n", 1 + (superpoder1 < superpoder2), (superpoder1 > superpoder2) * 1);
 
+    // Comparação das Cartas, atributo escolhido: População
+    printf("\n Comparação das Cartas (Atributo: População) \n");
+    printf("Carta 1 - %s: %lu habitantes\n", cidade, populacao);
+    printf("Carta 2 - %s: %lu habitantes\n", cidade2, populacao2);
+    
     return 0;
 
 }

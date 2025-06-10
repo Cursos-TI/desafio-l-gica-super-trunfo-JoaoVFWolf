@@ -142,8 +142,15 @@ int main() {
     printf("6 - Super Poder\n");
     scanf("%d", &atributo1);
 
-printf("\nEscolha o segundo atributo para comparar (diferente do primeiro):\n");
-scanf("%d", &atributo2);
+    printf("\nEscolha o segundo atributo para comparar (diferente do primeiro):\n");
+    scanf("%d", &atributo2);
+
+    // Validar as escolhas
+    if (atributo1 < 1 || atributo1 > 6 || atributo2 < 1 || atributo2 > 6 || atributo1 == atributo2) {
+        printf("Escolhas inválidas. Tente novamente com dois atributos diferentes entre 1 e 6.\n");
+        return 1;
+        
+}
     return 0;
 
 }

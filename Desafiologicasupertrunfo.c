@@ -149,7 +149,38 @@ int main() {
     if (atributo1 < 1 || atributo1 > 6 || atributo2 < 1 || atributo2 > 6 || atributo1 == atributo2) {
         printf("Escolhas inválidas. Tente novamente com dois atributos diferentes entre 1 e 6.\n");
         return 1;
-        
+}
+
+    // Variáveis para armazenar os valores dos atributos
+    float valor1_carta1 = 0, valor1_carta2 = 0;
+    float valor2_carta1 = 0, valor2_carta2 = 0;
+
+    // Obter valores do primeiro atributo
+    switch (atributo1) {
+        case 1:
+            valor1_carta1 = populacao;
+            valor1_carta2 = populacao2;
+            break;
+        case 2:
+            valor1_carta1 = area;
+            valor1_carta2 = area2;
+            break;
+        case 3:
+            valor1_carta1 = pib;
+            valor1_carta2 = pib2;
+            break;
+        case 4:
+            valor1_carta1 = pontos_t;
+            valor1_carta2 = pontos_t2;
+            break;
+        case 5:
+            valor1_carta1 = densidadep1;
+            valor1_carta2 = densidadep2;
+            break;
+        case 6:
+            valor1_carta1 = superpoder1;
+            valor1_carta2 = superpoder2;
+            break;
 }
     return 0;
 

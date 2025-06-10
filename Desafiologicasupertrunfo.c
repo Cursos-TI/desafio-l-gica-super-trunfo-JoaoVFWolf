@@ -140,7 +140,8 @@ int main() {
     printf("3 - PIB\n");
     printf("4 - Número de Pontos Turísticos\n");
     printf("5 - Densidade Demográfica\n");
-    printf("Digite sua escolha (1 a 5): ");
+    printf("6 - Super Poder\n");
+    printf("Digite sua escolha (1 a 6): ");
     scanf("%d", &escolha);
 
     printf("\n Comparação de Cartas \n");
@@ -209,8 +210,20 @@ int main() {
                 printf("Resultado: Empate!\n");
             break;
         
+        case 6:
+            printf("Atributo escolhido: Super Poder\n");
+            printf("%s: %.2f super poder\n", cidade, superpoder1);
+            printf("%s: %.2f super poder\n", cidade2, superpoder2);
+            if (superpoder1 > superpoder2)
+                printf("Resultado: %s venceu!\n", cidade);
+            else if (superpoder2 > superpoder1)
+                printf("Resultado: %s venceu!\n", cidade2);
+            else
+                printf("Resultado: Empate!\n");
+            break;
+            
         default:
-            printf("Opção inválida. Por favor, escolha um número entre 1 e 5.\n");
+            printf("Opção inválida. Por favor, escolha um número entre 1 e 6.\n");
     }
 
     

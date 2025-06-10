@@ -146,7 +146,19 @@ int main() {
     printf("\n Comparação de Cartas \n");
     printf("Carta 1 - %s\n", cidade);
     printf("Carta 2 - %s\n", cidade2);
-    
+
+    switch (escolha) {
+        case 1:
+            printf("Atributo escolhido: População\n");
+            printf("%s: %lu habitantes\n", cidade, populacao);
+            printf("%s: %lu habitantes\n", cidade2, populacao2);
+            if (populacao > populacao2)
+                printf("Resultado: %s venceu!\n", cidade);
+            else if (populacao2 > populacao)
+                printf("Resultado: %s venceu!\n", cidade2);
+            else
+                printf("Resultado: Empate!\n");
+            break;
     }
 
     

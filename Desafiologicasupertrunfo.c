@@ -182,6 +182,35 @@ int main() {
             valor1_carta2 = superpoder2;
             break;
 }
+
+    // Obter valores do segundo atributo
+    switch (atributo2) {
+        case 1:
+            valor2_carta1 = populacao;
+            valor2_carta2 = populacao2;
+            break;
+        case 2:
+            valor2_carta1 = area;
+            valor2_carta2 = area2;
+            break;
+        case 3:
+            valor2_carta1 = pib;
+            valor2_carta2 = pib2;
+            break;
+        case 4:
+            valor2_carta1 = pontos_t;
+            valor2_carta2 = pontos_t2;
+            break;
+        case 5:
+            valor2_carta1 = densidadep1;
+            valor2_carta2 = densidadep2;
+            break;
+        case 6:
+            valor2_carta1 = superpoder1;
+            valor2_carta2 = superpoder2;
+            break;
+}
+
     return 0;
 
 }

@@ -171,6 +171,18 @@ int main() {
             else
                 printf("Resultado: Empate!\n");
             break;
+
+        case 3:
+            printf("Atributo escolhido: PIB\n");
+            printf("%s: R$ %.2f bilhões\n", cidade, pib);
+            printf("%s: R$ %.2f bilhões\n", cidade2, pib2);
+            if (pib > pib2)
+                printf("Resultado: %s venceu!\n", cidade);
+            else if (pib2 > pib)
+                printf("Resultado: %s venceu!\n", cidade2);
+            else
+                printf("Resultado: Empate!\n");
+            break;
     }
 
     

@@ -236,6 +236,20 @@ int main() {
         if (valor2_carta1 > valor2_carta2) pontos_carta1++;
         else if (valor2_carta2 > valor2_carta1) pontos_carta2++;
 }
+
+    // Mostrar resultado
+    printf("\nPontuação final:\n");
+    printf("Carta 1: %.0f pontos\n", pontos_carta1);
+    printf("Carta 2: %.0f pontos\n", pontos_carta2);
+
+    if (pontos_carta1 > pontos_carta2)
+        printf("Resultado: Carta 1 venceu!\n");
+    else if (pontos_carta2 > pontos_carta1)
+        printf("Resultado: Carta 2 venceu!\n");
+    else
+        printf("Resultado: Empate!\n");
+
+        
     return 0;
 
 }

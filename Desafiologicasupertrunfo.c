@@ -183,6 +183,34 @@ int main() {
             else
                 printf("Resultado: Empate!\n");
             break;
+        
+        case 4:
+            printf("Atributo escolhido: Pontos Turísticos\n");
+            printf("%s: %d pontos turísticos\n", cidade, pontos_t);
+            printf("%s: %d pontos turísticos\n", cidade2, pontos_t2);
+            if (pontos_t > pontos_t2)
+                printf("Resultado: %s venceu!\n", cidade);
+            else if (pontos_t2 > pontos_t)
+                printf("Resultado: %s venceu!\n", cidade2);
+            else
+                printf("Resultado: Empate!\n");
+            break;
+
+        case 5:
+            printf("Atributo escolhido: Densidade Demográfica\n");
+            printf("%s: %.2f hab/km²\n", cidade, densidadep1);
+            printf("%s: %.2f hab/km²\n", cidade2, densidadep2);
+            // Regra especial: vence quem tiver MENOR densidade
+            if (densidadep1 < densidadep2)
+                printf("Resultado: %s venceu!\n", cidade);
+            else if (densidadep2 < densidadep1)
+                printf("Resultado: %s venceu!\n", cidade2);
+            else
+                printf("Resultado: Empate!\n");
+            break;
+        
+        default:
+            printf("Opção inválida. Por favor, escolha um número entre 1 e 5.\n");
     }
 
     

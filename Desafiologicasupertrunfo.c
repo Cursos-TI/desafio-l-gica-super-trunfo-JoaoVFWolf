@@ -159,6 +159,18 @@ int main() {
             else
                 printf("Resultado: Empate!\n");
             break;
+
+        case 2:
+            printf("Atributo escolhido: Área\n");
+            printf("%s: %.2f km²\n", cidade, area);
+            printf("%s: %.2f km²\n", cidade2, area2);
+            if (area > area2)
+                printf("Resultado: %s venceu!\n", cidade);
+            else if (area2 > area)
+                printf("Resultado: %s venceu!\n", cidade2);
+            else
+                printf("Resultado: Empate!\n");
+            break;
     }
 
     

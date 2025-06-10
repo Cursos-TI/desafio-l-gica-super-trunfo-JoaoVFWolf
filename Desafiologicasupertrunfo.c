@@ -211,6 +211,31 @@ int main() {
             break;
 }
 
+    // Mostrar valores
+    printf("\nComparando atributos:\n");
+    printf("Atributo 1: %.2f (Carta 1) vs %.2f (Carta 2)\n", valor1_carta1, valor1_carta2);
+    printf("Atributo 2: %.2f (Carta 1) vs %.2f (Carta 2)\n", valor2_carta1, valor2_carta2);
+
+    // Somar os pontos (lembrando que para densidade, menor vence)
+    float pontos_carta1 = 0, pontos_carta2 = 0;
+
+    // Atributo 1
+    if (atributo1 == 5) {
+        if (valor1_carta1 < valor1_carta2) pontos_carta1++;
+        else if (valor1_carta2 < valor1_carta1) pontos_carta2++;
+    } else {
+        if (valor1_carta1 > valor1_carta2) pontos_carta1++;
+        else if (valor1_carta2 > valor1_carta1) pontos_carta2++;
+}
+
+// Atributo 2
+    if (atributo2 == 5) {
+        if (valor2_carta1 < valor2_carta2) pontos_carta1++;
+        else if (valor2_carta2 < valor2_carta1) pontos_carta2++;
+    } else {
+        if (valor2_carta1 > valor2_carta2) pontos_carta1++;
+        else if (valor2_carta2 > valor2_carta1) pontos_carta2++;
+}
     return 0;
 
 }

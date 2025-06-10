@@ -131,102 +131,19 @@ int main() {
     printf("PIB per Capita: Carta %d venceu (%d)\n", 1 + (pibpercapita1 < pibpercapita2), (pibpercapita1 > pibpercapita2) * 1);
     printf("Super Poder: Carta %d venceu (%d)\n", 1 + (superpoder1 < superpoder2), (superpoder1 > superpoder2) * 1);*/
 
-    // Comparação das Cartas
-    int escolha;
-    printf("\n MENU DE COMPARAÇAO \n");
-    printf("Escolha o atrtibuto para comparar as cartas:\n");
+    // Exibir o menu de escolha
+    int atributo1, atributo2;
+    printf("\nEscolha o primeiro atributo para comparar:\n");
     printf("1 - População\n");
     printf("2 - Área\n");
     printf("3 - PIB\n");
-    printf("4 - Número de Pontos Turísticos\n");
+    printf("4 - Pontos Turísticos\n");
     printf("5 - Densidade Demográfica\n");
     printf("6 - Super Poder\n");
-    printf("Digite sua escolha (1 a 6): ");
-    scanf("%d", &escolha);
+    scanf("%d", &atributo1);
 
-    printf("\n Comparação de Cartas \n");
-    printf("Carta 1 - %s\n", cidade);
-    printf("Carta 2 - %s\n", cidade2);
-
-    switch (escolha) {
-        case 1:
-            printf("Atributo escolhido: População\n");
-            printf("%s: %lu habitantes\n", cidade, populacao);
-            printf("%s: %lu habitantes\n", cidade2, populacao2);
-            if (populacao > populacao2)
-                printf("Resultado: %s venceu!\n", cidade);
-            else if (populacao2 > populacao)
-                printf("Resultado: %s venceu!\n", cidade2);
-            else
-                printf("Resultado: Empate!\n");
-            break;
-
-        case 2:
-            printf("Atributo escolhido: Área\n");
-            printf("%s: %.2f km²\n", cidade, area);
-            printf("%s: %.2f km²\n", cidade2, area2);
-            if (area > area2)
-                printf("Resultado: %s venceu!\n", cidade);
-            else if (area2 > area)
-                printf("Resultado: %s venceu!\n", cidade2);
-            else
-                printf("Resultado: Empate!\n");
-            break;
-
-        case 3:
-            printf("Atributo escolhido: PIB\n");
-            printf("%s: R$ %.2f bilhões\n", cidade, pib);
-            printf("%s: R$ %.2f bilhões\n", cidade2, pib2);
-            if (pib > pib2)
-                printf("Resultado: %s venceu!\n", cidade);
-            else if (pib2 > pib)
-                printf("Resultado: %s venceu!\n", cidade2);
-            else
-                printf("Resultado: Empate!\n");
-            break;
-        
-        case 4:
-            printf("Atributo escolhido: Pontos Turísticos\n");
-            printf("%s: %d pontos turísticos\n", cidade, pontos_t);
-            printf("%s: %d pontos turísticos\n", cidade2, pontos_t2);
-            if (pontos_t > pontos_t2)
-                printf("Resultado: %s venceu!\n", cidade);
-            else if (pontos_t2 > pontos_t)
-                printf("Resultado: %s venceu!\n", cidade2);
-            else
-                printf("Resultado: Empate!\n");
-            break;
-
-        case 5:
-            printf("Atributo escolhido: Densidade Demográfica\n");
-            printf("%s: %.2f hab/km²\n", cidade, densidadep1);
-            printf("%s: %.2f hab/km²\n", cidade2, densidadep2);
-            // Regra especial: vence quem tiver MENOR densidade
-            if (densidadep1 < densidadep2)
-                printf("Resultado: %s venceu!\n", cidade);
-            else if (densidadep2 < densidadep1)
-                printf("Resultado: %s venceu!\n", cidade2);
-            else
-                printf("Resultado: Empate!\n");
-            break;
-        
-        case 6:
-            printf("Atributo escolhido: Super Poder\n");
-            printf("%s: %.2f super poder\n", cidade, superpoder1);
-            printf("%s: %.2f super poder\n", cidade2, superpoder2);
-            if (superpoder1 > superpoder2)
-                printf("Resultado: %s venceu!\n", cidade);
-            else if (superpoder2 > superpoder1)
-                printf("Resultado: %s venceu!\n", cidade2);
-            else
-                printf("Resultado: Empate!\n");
-            break;
-            
-        default:
-            printf("Opção inválida. Por favor, escolha um número entre 1 e 6.\n");
-    }
-
-    
+printf("\nEscolha o segundo atributo para comparar (diferente do primeiro):\n");
+scanf("%d", &atributo2);
     return 0;
 
 }
